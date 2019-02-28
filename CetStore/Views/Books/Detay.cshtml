@@ -1,0 +1,16 @@
+﻿@model Book
+@{
+    ViewData["Title"] = "Detay";
+}
+
+<h1>Kitap Detayları</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-4">Kitap Adı</div>
+        <div class="col-4">@Model.Name</div>
+    </div>
+    <div class="row">
+        <div class="col-4">Fiyatı</div>
+        <div class="col-4 alert-danger">@Model.Price TL</div>
+    </div>
+</div>
